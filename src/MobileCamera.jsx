@@ -11,8 +11,9 @@ export default function MobileCamera() {
       {/* ============ */}
       {/* == Header == */}
       {/* ============ */}
-      <div className="absolute top-0 z-50 h-[25vh] w-full bg-slate-100">
+      <div className="absolute top-0 z-50 h-[25vh] w-full bg-red-300">
         Header
+        <p>25 viewport height absolute</p>
       </div>
       {/* == Camera == */}
       <Webcam
@@ -22,11 +23,12 @@ export default function MobileCamera() {
       {/* ============ */}
       {/* == Footer == */}
       {/* ============ */}
-      <div className="absolute bottom-0 z-50 h-[25vh] w-full bg-slate-100 flex flex-col">
+      <div className="absolute bottom-0 z-50 h-[25vh] w-full bg-green-300 flex flex-col">
           {/* Take Photo */}
           <button className="bg-blue-400 rounded-full p-2 m-2 text-white">
             <i className="fa-solid fa-circle-dot"></i>
           </button>
+          <p>25 viewport height absolute</p>
       </div>
     </div>
   )

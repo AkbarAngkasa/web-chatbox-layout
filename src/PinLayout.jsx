@@ -4,6 +4,7 @@ export default function PinLayout() {
       {/* === Header ===*/}
       <div className="w-full h-[15vh] bg-red-400">
         Header
+        <p>15 viewport height</p>
       </div>
 
       {/* ========================= */}
@@ -22,13 +23,22 @@ export default function PinLayout() {
       {/* ============================= */}
         <>
           {/* === Alert === */}
-          <div className="w-full h-[20vh] bg-green-400">Alert</div>
+          <div className="w-full h-[20vh] bg-green-400">
+            Alert
+            <p>20 viewport height</p>
+          </div>
           
           {/* === Pin Screen === */}
-          <div className="w-full h-[10vh] bg-yellow-400">Pin</div>
+          <div className="w-full h-[10vh] bg-yellow-400">
+            Pin
+            <p>10 viewport height</p>
+          </div>
           
           {/* === Buttons === */}
-          <div className="w-full h-[45vh] bg-blue-400">Buttons</div>
+          <div className="w-full h-[45vh] bg-blue-400">
+            Buttons
+            <p>45 viewport height</p>
+          </div>
         </>
       {/* ==================================== */}
       {/* == End Of Is Not Submitted Layout == */}
