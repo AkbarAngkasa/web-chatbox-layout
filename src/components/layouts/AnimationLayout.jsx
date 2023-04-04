@@ -1,9 +1,21 @@
 import React from 'react'
 import Header from '../breadcrumbs/Header'
+import Button from '../breadcrumbs/Button'
 
-export default function AnimationLayout({ isHeader, headerElhImg, isHeaderTitle, headerTitle, animation, isAnimationTitle, animationTitle }) {
+// == Contents ==
+// 1. Header  :Boolean
+// 2. Header img  :HTML Element
+// 3. Header Title  :String
+// 4. Animation :HTML Element
+// 5. Animation Title :String
+// 6. Button  :Boolean
+// 7. ButtonHandler :Function
+// 8. ButtonTitle: String
+
+export default function AnimationLayout({ isHeader, headerElhImg, isHeaderTitle, headerTitle, animation, isAnimationTitle, animationTitle, isBtn, btnTitle, isBtnHandler, btnHandler }) {
+
   return (
-    <div className="h-screen flex flex-col justify-center bg-red-400">
+    <div className="h-screen flex flex-col justify-center bg-red-200">
       {/* Header */}
       {isHeader &&
         <Header
@@ -13,11 +25,20 @@ export default function AnimationLayout({ isHeader, headerElhImg, isHeaderTitle,
         />
       }
       {/* Animation */}
-      <div className="h-[75vh] py-[3%] px-[2%] flex flex-col justify-start items-start bg-red-300">
+      <div className="h-[75vh] py-[3%] px-[2%] flex flex-col justify-start items-start">
         <div className="h-[50vh] w-full lg:w-[40%] mx-auto flex flex-col justify-center items-center">
           {animation}
           {isAnimationTitle &&
-            <h1 className='text-blue-600 font-semibold text-xl text-center sm:text-3xl'>{animationTitle}</h1>
+            <h1 className='text-blue-600 font-semibold text-2xl text-center sm:text-3xl'>{animationTitle}</h1>
+          }
+          {isBtn &&
+            <div className='mt-3 sm:mt-4'>
+              {isBtnHandler ?
+                <Button isBtnHandler={true} btnHandler={btnHandler} btnTitle={btnTitle}/>
+                :
+                <Button isBtnHandler={false} btnTitle={btnTitle}/>
+              }
+            </div>
           }
         </div>
       </div>

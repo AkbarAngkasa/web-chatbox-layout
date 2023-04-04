@@ -4,6 +4,10 @@ import logo from "../assets/images/emkop-logo-transparent-landscape.png"
 import {NotFoundAnimation} from "../components/animated/NotFoundAnimation"
 
 export default function AnimationLayoutPage() {
+  function clickHandler(){
+    console.log('Clicked')
+  }
+  
   return (
     <>
         <AnimationLayout 
@@ -14,6 +18,10 @@ export default function AnimationLayoutPage() {
           animation={<NotFoundAnimation />}
           isAnimationTitle={true}
           animationTitle="Animation Title"
+          isBtn={true}
+          btnTitle={"Button"}
+          isBtnHandler={true}
+          btnHandler={clickHandler}
         />  
     </>
   )

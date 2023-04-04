@@ -7,7 +7,7 @@ import PinLayout from "./pages/PinLayout"
 export default function App() {
   return(
     <Router>
-      <div className="content select-none">
+      <div className="content select-none font-sans">
         <Routes>
           <Route path="/" element={<Home />}/>
           <Route path="/camera-layout" element={<MobileCamera />}/>
