@@ -1,6 +1,6 @@
 import Webcam from "react-webcam"
 
-export default function MobileCamera() {
+export default function CameraLayout() {
   const videoConstraints = {
     facingMode: "user"
   };

@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react'
 import Lottie from 'lottie-web';
 
-export function NotFoundAnimation() {
+export default function NotFoundAnimation() {
     const container = useRef(null);
     
     useEffect(() => {

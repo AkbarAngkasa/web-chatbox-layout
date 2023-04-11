@@ -1,4 +1,3 @@
-import React from 'react'
 import Header from '../breadcrumbs/Header'
 import Button from '../breadcrumbs/Button'
 
@@ -13,7 +12,6 @@ import Button from '../breadcrumbs/Button'
 // 8. ButtonTitle: String
 
 export default function AnimationLayout({ isHeader, headerElhImg, isHeaderTitle, headerTitle, animation, isAnimationTitle, animationTitle, isBtn, btnTitle, isBtnHandler, btnHandler }) {
-
   return (
     <div className="h-screen flex flex-col justify-center bg-red-200">
       {/* Header */}
@@ -25,7 +23,7 @@ export default function AnimationLayout({ isHeader, headerElhImg, isHeaderTitle,
         />
       }
       {/* Animation */}
-      <div className="h-[75vh] py-[3%] px-[2%] flex flex-col justify-start items-start">
+      <div className="h-[75vh] py-[3%] px-[2%] flex flex-col justify-start items-start">        
         <div className="h-[50vh] w-full lg:w-[40%] mx-auto flex flex-col justify-center items-center">
           {animation}
           {isAnimationTitle &&
