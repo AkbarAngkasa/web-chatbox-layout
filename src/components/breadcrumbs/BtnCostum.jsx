@@ -1,4 +1,4 @@
-export default function Button({isBtnHandler, btnHandler, btnTitle}) {
+export default function BtnCostum({isBtnHandler, btnHandler, btnTitle}) {
     return (
         <>
             {isBtnHandler ?

@@ -9,7 +9,7 @@ import CameraLayout from "./components/layouts/CameraLayout"
 
 // Breadcrumbs
 import NotFoundAnimation from './components/animated/NotFoundAnimation';
-import Button from './components/breadcrumbs/Button';
+import Btn from './components/breadcrumbs/Btn';
 
 export default function App() {
 
@@ -39,12 +39,20 @@ export default function App() {
               btnHandler={clickHandler}
             />
           }/>
-          <Route path='/component-button' element={
+          {/* <Route path='/component-button' element={
             <Button 
               isBtnHandler={false}
               btnTitle={'Button'}
             />}
-          />
+          /> */}
+          {/* <Route path='/component-button' element={
+              <Button color="dark">
+                Dark
+              </Button>
+          }/> */}
+          <Route path='/component-button' element={
+            <Btn />
+          }/>
         </Routes>
       </div>
     </Router>

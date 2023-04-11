@@ -1,5 +1,5 @@
 import Header from '../breadcrumbs/Header'
-import Button from '../breadcrumbs/Button'
+import BtnCostum from '../breadcrumbs/BtnCostum'
 
 // == Contents ==
 // 1. Header  :Boolean
@@ -32,9 +32,9 @@ export default function AnimationLayout({ isHeader, headerElhImg, isHeaderTitle,
           {isBtn &&
             <div className='mt-3 sm:mt-4'>
               {isBtnHandler ?
-                <Button isBtnHandler={true} btnHandler={btnHandler} btnTitle={btnTitle}/>
+                <BtnCostum isBtnHandler={true} btnHandler={btnHandler} btnTitle={btnTitle}/>
                 :
-                <Button isBtnHandler={false} btnTitle={btnTitle}/>
+                <BtnCostum isBtnHandler={false} btnTitle={btnTitle}/>
               }
             </div>
           }
