@@ -19,23 +19,29 @@
 //     )
 // }
 
-import { faChevronLeft } from '@fortawesome/free-solid-svg-icons';
+import { faChevronLeft, faStar, faUsers } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Button, Spinner } from 'flowbite-react';
 import { Link } from 'react-router-dom';
-
+import logo from '../../assets/images/emkop-logo-transparent-landscape.png';
 
 export default function Btn() {
     return (
-        <div className='w-[50%] h-screen m-auto grid grid-cols-1 place-content-center'>
+        <div className='mx-[5%] sm:w-[50%] h-screen sm:m-auto grid grid-cols-1 place-content-center'>
+            {/* Header */}
             <div>
                 <Link to={"/"}>
                     <Button pill={true} size="xs">
                         <FontAwesomeIcon icon={faChevronLeft} />                
                     </Button>
                 </Link>
-                <h1 className='font-bold border-b-2 border-slate-300 my-4 text-xl text-slate-400'>Button</h1>
+                <div className='my-4 border-b-2 border-slate-300'>
+                    <img src={logo} alt={logo} className="w-36 sm:w-40 align-middle inline-block"/>
+                    <h1 className='inline-block align-middle border-l-2 pl-2 font-bold text-xl sm:text-2xl text-blue-800'>Button Component</h1>
+                </div>
             </div>
+
+            {/* Content */}
             <div className='w-full flex flex-wrap items-center gap-2'>
                 <Button>
                     Button
@@ -67,6 +73,19 @@ export default function Btn() {
                 <Button gradientDuoTone="purpleToBlue">
                     Purple to Blue
                 </Button>
+                
+                {/* Btn Disabled */}
+                <Button disabled={true}>
+                    Disabled button
+                </Button>
+
+                {/* Btn Outline */}
+                <Button
+                    outline={true}
+                    gradientDuoTone="greenToBlue"
+                    >
+                    Green to Blue
+                </Button>
 
                 {/* Btn Loading */}
                 <Button>
@@ -79,6 +98,18 @@ export default function Btn() {
                     Loading ...
                 </Button>
                 
+                {/* Btn Pil */}
+                <Button pill={true} className='rounded-full bg-yellow-300 hover:bg-yellow-400'>
+                    <FontAwesomeIcon icon={faStar}/>
+                </Button>
+                <Button pill={true} className='rounded-full bg-green-400 hover:bg-green-500'>
+                    <FontAwesomeIcon icon={faUsers}/>
+                </Button>
+
+                {/* Btn Colored Shadows */}
+                <button type="button" className="text-white bg-gradient-to-r from-cyan-400 via-cyan-500 to-cyan-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 shadow-lg shadow-cyan-500/50 dark:shadow-lg dark:shadow-cyan-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">Cyan Shadows</button>
+                <button type="button" className="text-white bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-purple-300 dark:focus:ring-purple-800 shadow-lg shadow-purple-500/50 dark:shadow-lg dark:shadow-purple-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">Purple Shadows</button>
+
                 <div>
                     {/* Btn Payment */}
                     <button type="button" className="text-gray-900 bg-white hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-800 dark:bg-white dark:border-gray-700 dark:text-gray-900 dark:hover:bg-gray-200 mr-2 mb-2">
