@@ -10,6 +10,7 @@ import CameraLayout from "./components/layouts/CameraLayout"
 // Breadcrumbs
 import NotFoundAnimation from './components/animated/NotFoundAnimation';
 import Btn from './components/breadcrumbs/Btn';
+import Pgntn from './components/breadcrumbs/Pgntn';
 
 export default function App() {
 
@@ -52,6 +53,9 @@ export default function App() {
           }/> */}
           <Route path='/component-button' element={
             <Btn />
+          }/>
+          <Route path='/component-pagination' element={
+            <Pgntn />
           }/>
         </Routes>
       </div>
