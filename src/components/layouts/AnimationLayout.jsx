@@ -1,5 +1,5 @@
-import Header from '../blocks/Header'
-import BtnCostum from '../blocks/BtnCostum'
+import Header from '../chunks/Header'
+import BtnCostum from '../chunks/BtnCostum'
 
 // == Contents ==
 // 1. Header  :Boolean
