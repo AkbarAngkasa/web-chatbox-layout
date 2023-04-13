@@ -4,13 +4,13 @@
 //             {isBtnHandler ?
 //                 <button 
 //                     onClick={(e) => btnHandler(e)} 
-//                     className="px-4 py-1 rounded-full font-bold text-lg tracking-normal leading-relaxed bg-blue-500 text-white sm:hover:bg-blue-600 sm:text-2xl sm:py-2 sm:px-6"
+//                     className="px-4 py-1 rounded-full font-bold text-lg tracking-normal leading-relaxed bg-blue-500 text-white lg:hover:bg-blue-600 lg:text-2xl lg:py-2 lg:px-6"
 //                 >
 //                     {btnTitle}
 //                 </button>
 //                 :
 //                 <button 
-//                     className="px-4 py-1 rounded-full font-bold text-lg tracking-normal leading-relaxed bg-blue-500 text-white sm:hover:bg-blue-600 sm:text-2xl sm:py-2 sm:px-6"
+//                     className="px-4 py-1 rounded-full font-bold text-lg tracking-normal leading-relaxed bg-blue-500 text-white lg:hover:bg-blue-600 lg:text-2xl lg:py-2 lg:px-6"
 //                 >
 //                     {btnTitle}
 //                 </button>
@@ -27,7 +27,7 @@ import logo from '../../assets/images/emkop-logo-transparent-landscape.png';
 
 export default function Btn() {
     return (
-        <div className='mx-[5%] sm:w-[50%] sm:h-screen sm:mx-auto my-10 sm:m-auto grid grid-cols-1 place-content-center'>
+        <div className='mx-[5%] lg:w-[50%] lg:h-screen lg:mx-auto my-10 lg:m-auto grid grid-cols-1 place-content-center'>
             {/* Header */}
             <div>
                 <Link to={"/"}>
@@ -36,8 +36,8 @@ export default function Btn() {
                     </Button>
                 </Link>
                 <div className='my-4 border-b-2 border-slate-300'>
-                    <img src={logo} alt={logo} className="w-36 sm:w-40 align-middle inline-block"/>
-                    <h1 className='inline-block align-middle border-l-2 pl-2 font-bold text-xl sm:text-2xl text-blue-800'>Button Component</h1>
+                    <img src={logo} alt={logo} className="w-36 lg:w-40 align-middle inline-block"/>
+                    <h1 className='inline-block align-middle border-l-2 pl-2 font-bold text-xl lg:text-2xl text-blue-800'>Button Component</h1>
                 </div>
             </div>
 

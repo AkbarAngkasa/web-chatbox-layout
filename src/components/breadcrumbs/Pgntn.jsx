@@ -6,7 +6,7 @@ import logo from '../../assets/images/emkop-logo-transparent-landscape.png';
 
 export default function Pgntn() {
   return (
-    <div className='mx-[5%] sm:w-[50%] sm:m-auto h-screen grid grid-cols-1 place-content-center'>
+    <div className='mx-[5%] lg:w-[50%] lg:m-auto h-screen grid grid-cols-1 place-content-center'>
       {/* Header */}
       <div>
           <Link to={"/"}>
@@ -15,8 +15,8 @@ export default function Pgntn() {
               </Button>
           </Link>
           <div className='my-4 border-b-2 border-slate-300'>
-              <img src={logo} alt={logo} className="w-36 sm:w-40 align-middle inline-block"/>
-              <h1 className='inline-block align-middle border-l-2 pl-2 font-bold text-xl sm:text-2xl text-blue-800'>Pagination Component</h1>
+              <img src={logo} alt={logo} className="w-36 lg:w-40 align-middle inline-block"/>
+              <h1 className='inline-block align-middle border-l-2 pl-2 font-bold text-xl lg:text-2xl text-blue-800'>Pagination Component</h1>
           </div>
       </div>
 

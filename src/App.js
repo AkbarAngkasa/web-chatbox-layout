@@ -30,7 +30,7 @@ export default function App() {
           <Route path="/animation-layout" element={
             <AnimationLayout 
               isHeader={true}
-              headerElhImg={<img src={logo} alt={logo} className="w-60 -mt-2 sm:w-80 sm:-mt-8 z-10" />}
+              headerElhImg={<img src={logo} alt={logo} className="w-60 -mt-2 lg:w-80 lg:-mt-8 z-10" />}
               isHeaderTitle={true}
               headerTitle="Animation Page Layout"
               animation={<NotFoundAnimation />}

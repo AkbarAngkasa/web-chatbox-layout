@@ -10,7 +10,7 @@ export default function Header({elhImg, isTitle, title}) {
             {/* Boolean */}
             {isTitle &&
                 <div className="h-[25%] w-full flex items-center justify-center bg-red-400">
-                    <h1 className='text-blue-800 font-bold text-2xl text-center sm:text-3xl z-10'>{title}</h1>
+                    <h1 className='text-blue-800 font-bold text-2xl text-center lg:text-3xl z-10'>{title}</h1>
                 </div>
             }
         </div>

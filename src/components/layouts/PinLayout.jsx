@@ -1,6 +1,6 @@
 export default function PinLayout() {
   return (
-    <div className="w-[90%] flex flex-col justify-center items-center justify-items-center mx-auto h-[100vh] bg-slate-600 sm:w-[40%]">
+    <div className="w-[90%] flex flex-col justify-center items-center justify-items-center mx-auto h-[100vh] bg-slate-600 lg:w-[40%]">
       {/* === Header ===*/}
       <div className="w-full h-[15vh] bg-red-400">
         Header

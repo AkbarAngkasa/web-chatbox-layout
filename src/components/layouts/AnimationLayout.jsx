@@ -27,10 +27,10 @@ export default function AnimationLayout({ isHeader, headerElhImg, isHeaderTitle,
         <div className="h-[50vh] w-full lg:w-[40%] mx-auto flex flex-col justify-center items-center">
           {animation}
           {isAnimationTitle &&
-            <h1 className='text-blue-600 font-semibold text-2xl text-center sm:text-3xl'>{animationTitle}</h1>
+            <h1 className='text-blue-600 font-semibold text-2xl text-center lg:text-3xl'>{animationTitle}</h1>
           }
           {isBtn &&
-            <div className='mt-3 sm:mt-4'>
+            <div className='mt-3 lg:mt-4'>
               {isBtnHandler ?
                 <BtnCostum isBtnHandler={true} btnHandler={btnHandler} btnTitle={btnTitle}/>
                 :
