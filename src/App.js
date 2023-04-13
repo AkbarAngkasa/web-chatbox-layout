@@ -12,6 +12,7 @@ import NotFoundAnimation from './components/animated/NotFoundAnimation';
 import Btn from './components/breadcrumbs/Btn';
 import Pgntn from './components/breadcrumbs/Pgntn';
 import Forms from './components/breadcrumbs/Forms';
+import MessageBox from './components/breadcrumbs/MessageBox';
 
 export default function App() {
 
@@ -60,6 +61,9 @@ export default function App() {
           }/>
           <Route path='/component-form' element={
             <Forms />
+          }/>
+          <Route path='/component-message-box' element={
+            <MessageBox />
           }/>
         </Routes>
       </div>
