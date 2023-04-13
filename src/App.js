@@ -11,6 +11,7 @@ import CameraLayout from "./components/layouts/CameraLayout"
 import NotFoundAnimation from './components/animated/NotFoundAnimation';
 import Btn from './components/breadcrumbs/Btn';
 import Pgntn from './components/breadcrumbs/Pgntn';
+import Forms from './components/breadcrumbs/Forms';
 
 export default function App() {
 
@@ -56,6 +57,9 @@ export default function App() {
           }/>
           <Route path='/component-pagination' element={
             <Pgntn />
+          }/>
+          <Route path='/component-form' element={
+            <Forms />
           }/>
         </Routes>
       </div>

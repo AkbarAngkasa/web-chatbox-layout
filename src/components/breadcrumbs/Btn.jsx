@@ -27,7 +27,7 @@ import logo from '../../assets/images/emkop-logo-transparent-landscape.png';
 
 export default function Btn() {
     return (
-        <div className='mx-[5%] sm:w-[50%] h-screen sm:m-auto grid grid-cols-1 place-content-center'>
+        <div className='mx-[5%] sm:w-[50%] sm:h-screen sm:mx-auto my-10 sm:m-auto grid grid-cols-1 place-content-center'>
             {/* Header */}
             <div>
                 <Link to={"/"}>

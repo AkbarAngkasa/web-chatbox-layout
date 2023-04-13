@@ -8,6 +8,7 @@ export default function Home() {
         <Link to={'/animation-layout'}>Animation Screen Layout</Link>
         <Link to={'/component-button'}>Component Button</Link>
         <Link to={'/component-pagination'}>Component Pagination</Link>
+        <Link to={'/component-form'}>Component Forms</Link>
     </div>
   )
 }
