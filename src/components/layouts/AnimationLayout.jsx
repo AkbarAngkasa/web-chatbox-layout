@@ -1,5 +1,5 @@
-import Header from '../component/Header'
-import BtnCostum from '../component/BtnCostum'
+import Header from '../blocks/Header'
+import BtnCostum from '../blocks/BtnCostum'
 
 // == Contents ==
 // 1. Header  :Boolean
