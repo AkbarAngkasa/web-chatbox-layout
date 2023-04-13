@@ -15,6 +15,7 @@ import Forms from './components/component/Forms';
 import MessageBox from './components/component/MessageBox';
 import Nav from './components/blocks/Nav';
 import Table from './components/blocks/Table';
+import ModalCostum from './components/component/ModalCostum';
 
 export default function App() {
 
@@ -67,6 +68,10 @@ export default function App() {
           <Route path='/component-message-box' element={
             <MessageBox />
           }/>
+          <Route path='/component-modal' element={
+            <ModalCostum />
+          }/>
+          {/* Blocks */}
           <Route path='/block-navbar' element={
             <Nav />
           }/>
