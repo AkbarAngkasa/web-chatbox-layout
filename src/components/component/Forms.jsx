@@ -80,22 +80,22 @@ export default function Forms() {
 
                 <hr className='my-4' />
 
-                <div class="mb-6">
-                    <label for="username-success" class="block mb-2 text-sm font-medium text-green-700 dark:text-green-500">Username</label>
-                    <input type="text" id="username-success" class="bg-green-50 border border-green-500 text-green-900 placeholder-green-700 text-sm rounded-lg focus:ring-green-500 focus:border-green-500 block w-full p-2.5 dark:bg-green-100 dark:border-green-400" placeholder="John Doe" />
-                    <p class="mt-2 text-sm text-green-600 dark:text-green-500"><span class="font-medium">Keren!</span> Username tersedia!</p>
+                <div className="mb-6">
+                    <label htmlFor="username-success" className="block mb-2 text-sm font-medium text-green-700 dark:text-green-500">Username</label>
+                    <input type="text" id="username-success" className="bg-green-50 border border-green-500 text-green-900 placeholder-green-700 text-sm rounded-lg focus:ring-green-500 focus:border-green-500 block w-full p-2.5 dark:bg-green-100 dark:border-green-400" placeholder="John Doe" />
+                    <p className="mt-2 text-sm text-green-600 dark:text-green-500"><span className="font-medium">Keren!</span> Username tersedia!</p>
                 </div>
                 <div>
-                    <label for="username-error" class="block mb-2 text-sm font-medium text-red-700 dark:text-red-500">Username</label>
-                    <input type="text" id="username-error" class="bg-red-50 border border-red-500 text-red-900 placeholder-red-700 text-sm rounded-lg focus:ring-red-500 focus:border-red-500 block w-full p-2.5 dark:bg-red-100 dark:border-red-400" placeholder="John Doe" />
-                    <p class="mt-2 text-sm text-red-600 dark:text-red-500"><span class="font-medium">Oops!</span> Username telah terdaftar!</p>
+                    <label htmlFor="username-error" className="block mb-2 text-sm font-medium text-red-700 dark:text-red-500">Username</label>
+                    <input type="text" id="username-error" className="bg-red-50 border border-red-500 text-red-900 placeholder-red-700 text-sm rounded-lg focus:ring-red-500 focus:border-red-500 block w-full p-2.5 dark:bg-red-100 dark:border-red-400" placeholder="John Doe" />
+                    <p className="mt-2 text-sm text-red-600 dark:text-red-500"><span className="font-medium">Oops!</span> Username telah terdaftar!</p>
                 </div>
 
                 <hr className='my-4' />
 
                 {/* Select input */}
-                <label for="countries" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Pilih negara</label>
-                <select id="countries" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                <label htmlFor="countries" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Pilih negara</label>
+                <select id="countries" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
                     <option>Indonesia</option>
                     <option>Singapore</option>
                     <option>Malaysia</option>
@@ -106,76 +106,76 @@ export default function Forms() {
 
                 {/* Checkbox */}
                 <fieldset>
-                    <legend class="sr-only">Checkbox variants</legend>
+                    <legend className="sr-only">Checkbox variants</legend>
 
-                    <div class="flex items-center mb-4">
-                        <input id="checkbox-1" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"/>
-                        <label for="checkbox-1" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Saya setuju dengan <button href="#" class="text-blue-600 hover:underline dark:text-blue-500">syarat dan ketentuan</button>.</label>
+                    <div className="flex items-center mb-4">
+                        <input id="checkbox-1" type="checkbox" value="" className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"/>
+                        <label htmlFor="checkbox-1" className="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Saya setuju dengan <button href="#" className="text-blue-600 hover:underline dark:text-blue-500">syarat dan ketentuan</button>.</label>
                     </div>
 
-                    <div class="flex items-center mb-4">
-                        <input id="checkbox-2" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"/>
-                        <label for="checkbox-2" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Saya ingin mendapatkan tawaran promosi</label>
+                    <div className="flex items-center mb-4">
+                        <input id="checkbox-2" type="checkbox" value="" className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"/>
+                        <label htmlFor="checkbox-2" className="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Saya ingin mendapatkan tawaran promosi</label>
                     </div>
 
-                    <div class="flex items-center mb-4">
-                        <input id="checkbox-3" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"/>
-                        <label for="checkbox-3" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Saya 18 tahun atau lebih tua</label>
+                    <div className="flex items-center mb-4">
+                        <input id="checkbox-3" type="checkbox" value="" className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"/>
+                        <label htmlFor="checkbox-3" className="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Saya 18 tahun atau lebih tua</label>
                     </div>
                     
-                    <div class="flex mb-4">
-                        <div class="flex items-center h-5">
-                            <input id="helper-checkbox" aria-describedby="helper-checkbox-text" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"/>
+                    <div className="flex mb-4">
+                        <div className="flex items-center h-5">
+                            <input id="helper-checkbox" aria-describedby="helper-checkbox-text" type="checkbox" value="" className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"/>
                         </div>
-                        <div class="ml-2 text-sm">
-                            <label for="helper-checkbox" class="font-medium text-gray-900 dark:text-gray-300">Kupon diskon Emkop</label>
-                            <p id="helper-checkbox-text" class="text-xs font-normal text-gray-500 dark:text-gray-400">Untuk minimal nominal transaksi sebesar Rp.50.000,00</p>
+                        <div className="ml-2 text-sm">
+                            <label htmlFor="helper-checkbox" className="font-medium text-gray-900 dark:text-gray-300">Kupon diskon Emkop</label>
+                            <p id="helper-checkbox-text" className="text-xs font-normal text-gray-500 dark:text-gray-400">Untuk minimal nominal transaksi sebesar Rp.50.000,00</p>
                         </div>
                     </div>
 
-                    <div class="flex items-center">
-                        <input id="international-shipping-disabled" type="checkbox" value="" class="w-4 h-4 border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800" disabled/>
-                        <label for="international-shipping-disabled" class="ml-2 text-sm font-medium text-gray-400 dark:text-gray-500">Berhak asuransi (disabled)</label>
+                    <div className="flex items-center">
+                        <input id="international-shipping-disabled" type="checkbox" value="" className="w-4 h-4 border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800" disabled/>
+                        <label htmlFor="international-shipping-disabled" className="ml-2 text-sm font-medium text-gray-400 dark:text-gray-500">Berhak asuransi (disabled)</label>
                     </div>
                 </fieldset>
 
                 <hr className='my-4'/>
 
                 <fieldset>
-                    <legend class="sr-only">Countries</legend>
+                    <legend className="sr-only">Countries</legend>
 
-                    <div class="flex items-center mb-4">
-                        <input id="country-option-1" type="radio" name="countries" value="USA" class="w-4 h-4 border-gray-300 focus:ring-2 focus:ring-blue-300 dark:focus:ring-blue-600 dark:focus:bg-blue-600 dark:bg-gray-700 dark:border-gray-600" checked/>
-                            <label for="country-option-1" class="block ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">
+                    <div className="flex items-center mb-4">
+                        <input id="country-option-1" type="radio" name="countries" value="USA" className="w-4 h-4 border-gray-300 focus:ring-2 focus:ring-blue-300 dark:focus:ring-blue-600 dark:focus:bg-blue-600 dark:bg-gray-700 dark:border-gray-600" checked/>
+                            <label htmlFor="country-option-1" className="block ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">
                                 Indonesia
                             </label>
                     </div>
 
-                    <div class="flex items-center mb-4">
-                        <input id="country-option-2" type="radio" name="countries" value="Germany" class="w-4 h-4 border-gray-300 focus:ring-2 focus:ring-blue-300 dark:focus:ring-blue-600 dark:focus:bg-blue-600 dark:bg-gray-700 dark:border-gray-600"/>
-                            <label for="country-option-2" class="block ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">
+                    <div className="flex items-center mb-4">
+                        <input id="country-option-2" type="radio" name="countries" value="Germany" className="w-4 h-4 border-gray-300 focus:ring-2 focus:ring-blue-300 dark:focus:ring-blue-600 dark:focus:bg-blue-600 dark:bg-gray-700 dark:border-gray-600"/>
+                            <label htmlFor="country-option-2" className="block ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">
                                 Singapore
                             </label>
                     </div>
 
-                    <div class="flex items-center mb-4">
-                        <input id="country-option-3" type="radio" name="countries" value="Spain" class="w-4 h-4 border-gray-300 focus:ring-2 focus:ring-blue-300 dark:focus:ring-blue-600 dark:bg-gray-700 dark:border-gray-600"/>
-                            <label for="country-option-3" class="block ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">
+                    <div className="flex items-center mb-4">
+                        <input id="country-option-3" type="radio" name="countries" value="Spain" className="w-4 h-4 border-gray-300 focus:ring-2 focus:ring-blue-300 dark:focus:ring-blue-600 dark:bg-gray-700 dark:border-gray-600"/>
+                            <label htmlFor="country-option-3" className="block ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">
                                 Malaysia
                             </label>
                     </div>
 
-                    <div class="flex items-center mb-4">
-                        <input id="country-option-4" type="radio" name="countries" value="United Kingdom" class="w-4 h-4 border-gray-300 focus:ring-2 focus:ring:blue-300 dark:focus-ring-blue-600 dark:bg-gray-700 dark:border-gray-600"/>
-                            <label for="country-option-4" class="block ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">
+                    <div className="flex items-center mb-4">
+                        <input id="country-option-4" type="radio" name="countries" value="United Kingdom" className="w-4 h-4 border-gray-300 focus:ring-2 focus:ring:blue-300 dark:focus-ring-blue-600 dark:bg-gray-700 dark:border-gray-600"/>
+                            <label htmlFor="country-option-4" className="block ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">
                                 Thailand
                             </label>
                     </div>
 
-                    <div class="flex items-center">
-                        <input id="option-disabled" type="radio" name="countries" value="China" class="w-4 h-4 border-gray-200 focus:ring-2 focus:ring-blue-300 dark:focus:ring-blue-600 dark:bg-gray-700 dark:border-gray-600" 
+                    <div className="flex items-center">
+                        <input id="option-disabled" type="radio" name="countries" value="China" className="w-4 h-4 border-gray-200 focus:ring-2 focus:ring-blue-300 dark:focus:ring-blue-600 dark:bg-gray-700 dark:border-gray-600" 
                         disabled/>
-                            <label for="option-disabled" class="block ml-2 text-sm font-medium text-gray-300 dark:text-gray-700">
+                            <label htmlFor="option-disabled" className="block ml-2 text-sm font-medium text-gray-300 dark:text-gray-700">
                                 China (disabled)
                             </label>
                     </div>
@@ -183,9 +183,9 @@ export default function Forms() {
 
                 <hr className='my-4'/>
 
-                <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white" for="user_avatar">Upload file</label>
-                <input class="block w-full text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400" aria-describedby="user_avatar_help" id="user_avatar" type="file"/>
-                <div class="mt-1 text-sm text-gray-500 dark:text-gray-300" id="user_avatar_help">Ukuran maksimal dokumen adalah 5mb</div>
+                <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white" htmlFor="user_avatar">Upload file</label>
+                <input className="block w-full text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400" aria-describedby="user_avatar_help" id="user_avatar" type="file"/>
+                <div className="mt-1 text-sm text-gray-500 dark:text-gray-300" id="user_avatar_help">Ukuran maksimal dokumen adalah 5mb</div>
 
 
             </div>

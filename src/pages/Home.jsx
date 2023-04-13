@@ -10,7 +10,7 @@ export default function Home() {
         <Link to={'/component-pagination'}>Component Pagination</Link>
         <Link to={'/component-form'}>Component Forms</Link>
         <Link to={'/component-message-box'}>Component Message Box</Link>
-        <Link to={'/block-navbar'}>Component Navbar Box</Link>
+        <Link to={'/block-navbar'}>Block Navbar Box</Link>
     </div>
   )
 }

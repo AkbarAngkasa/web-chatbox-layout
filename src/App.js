@@ -9,10 +9,10 @@ import CameraLayout from "./components/layouts/CameraLayout"
 
 // components
 import NotFoundAnimation from './components/animated/NotFoundAnimation';
-import Btn from './components/chunks/Btn';
-import Pgntn from './components/chunks/Pgntn';
-import Forms from './components/chunks/Forms';
-import MessageBox from './components/chunks/MessageBox';
+import Btn from './components/component/Btn';
+import Pgntn from './components/component/Pgntn';
+import Forms from './components/component/Forms';
+import MessageBox from './components/component/MessageBox';
 import Nav from './components/blocks/Nav';
 
 export default function App() {
