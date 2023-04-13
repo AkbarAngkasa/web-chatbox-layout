@@ -13,6 +13,7 @@ import Btn from './components/chunks/Btn';
 import Pgntn from './components/chunks/Pgntn';
 import Forms from './components/chunks/Forms';
 import MessageBox from './components/chunks/MessageBox';
+import Nav from './components/blocks/Nav';
 
 export default function App() {
 
@@ -64,6 +65,9 @@ export default function App() {
           }/>
           <Route path='/component-message-box' element={
             <MessageBox />
+          }/>
+          <Route path='/block-navbar' element={
+            <Nav />
           }/>
         </Routes>
       </div>
