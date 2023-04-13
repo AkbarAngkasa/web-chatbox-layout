@@ -13,7 +13,7 @@ export default function Nav() {
   });
 
   return (
-    <div className='mx-[5%] lg:w-[80%] lg:mx-auto my-10 grid grid-cols-1 place-content-center'>
+    <div className='mx-[5%] lg:w-[90%] lg:mx-auto my-10 grid grid-cols-1 place-content-center'>
       {/* Header */}
       <div>
         <Link to={"/"}>
@@ -23,7 +23,7 @@ export default function Nav() {
         </Link>
         <div className='my-4 border-b-2 border-slate-300'>
           <img src={logo} alt={logo} className="w-36 lg:w-40 align-middle inline-block" />
-          <h1 className='inline-block align-middle border-l-2 pl-2 font-bold text-xl lg:text-2xl text-blue-800'>Navbar Component</h1>
+          <h1 className='inline-block align-middle border-l-2 pl-2 font-bold text-xl lg:text-2xl text-blue-800'>Navbar Block</h1>
         </div>
       </div>
 

@@ -14,6 +14,7 @@ import Pgntn from './components/component/Pgntn';
 import Forms from './components/component/Forms';
 import MessageBox from './components/component/MessageBox';
 import Nav from './components/blocks/Nav';
+import Table from './components/blocks/Table';
 
 export default function App() {
 
@@ -68,6 +69,9 @@ export default function App() {
           }/>
           <Route path='/block-navbar' element={
             <Nav />
+          }/>
+          <Route path='/block-table' element={
+            <Table />
           }/>
         </Routes>
       </div>
