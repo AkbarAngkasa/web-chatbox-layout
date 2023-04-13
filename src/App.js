@@ -7,12 +7,12 @@ import PinLayout from "./components/layouts/PinLayout"
 import AnimationLayout from './components/layouts/AnimationLayout';
 import CameraLayout from "./components/layouts/CameraLayout"
 
-// Breadcrumbs
+// components
 import NotFoundAnimation from './components/animated/NotFoundAnimation';
-import Btn from './components/breadcrumbs/Btn';
-import Pgntn from './components/breadcrumbs/Pgntn';
-import Forms from './components/breadcrumbs/Forms';
-import MessageBox from './components/breadcrumbs/MessageBox';
+import Btn from './components/component/Btn';
+import Pgntn from './components/component/Pgntn';
+import Forms from './components/component/Forms';
+import MessageBox from './components/component/MessageBox';
 
 export default function App() {
 
