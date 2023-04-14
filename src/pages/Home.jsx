@@ -13,6 +13,7 @@ export default function Home() {
         <Link to={'/component-modal'}>Component Modal</Link>
         <Link to={'/block-navbar'}>Block Navbar</Link>
         <Link to={'/block-table'}>Block Table</Link>
+        <Link to={'/block-crud'}>Block CRUD</Link>
     </div>
   )
 }

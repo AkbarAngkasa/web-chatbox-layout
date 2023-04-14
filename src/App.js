@@ -16,6 +16,7 @@ import MessageBoxCostum from './components/component/MessageBoxCostum';
 import Nav from './components/blocks/Nav';
 import Table from './components/blocks/Table';
 import ModalCostum from './components/component/ModalCostum';
+import CRUD from './components/blocks/CRUD';
 
 export default function App() {
 
@@ -77,6 +78,9 @@ export default function App() {
           }/>
           <Route path='/block-table' element={
             <Table />
+          }/>
+          <Route path='/block-crud' element={
+            <CRUD />
           }/>
         </Routes>
       </div>

@@ -69,7 +69,7 @@ export default function Table() {
                     <th scope="col" className="p-4">
                       <div className="flex items-center">
                         <input id="checkbox-all" type="checkbox" className="w-4 h-4 bg-gray-100 border-gray-300 rounded text-primary-600 focus:ring-primary-500 dark:focus:ring-primary-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" />
-                        <label htmlFor="checkbox-all" className="sr-only">checkbox</label>
+                        <label htmlhtmlFor="checkbox-all" className="sr-only">checkbox</label>
                       </div>
                     </th>
                     <th scope="col" className="px-4 py-3">Product</th>
@@ -88,7 +88,7 @@ export default function Table() {
                     <td className="w-4 px-4 py-3">
                       <div className="flex items-center">
                         <input id="checkbox-table-search-1" type="checkbox" onClick={(event) => { event.stopPropagation() }} className="w-4 h-4 bg-gray-100 border-gray-300 rounded text-primary-600 focus:ring-primary-500 dark:focus:ring-primary-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" />
-                        <label htmlFor="checkbox-table-search-1" className="sr-only">checkbox</label>
+                        <label htmlhtmlFor="checkbox-table-search-1" className="sr-only">checkbox</label>
                       </div>
                     </td>
                     <th scope="row" className="flex items-center px-4 py-2 font-medium text-gray-900 whitespace-nowrap dark:text-white">
@@ -141,7 +141,7 @@ export default function Table() {
                     <td className="w-4 px-4 py-3">
                       <div className="flex items-center">
                         <input id="checkbox-table-search-1" type="checkbox" onClick={(event) => { event.stopPropagation() }} className="w-4 h-4 bg-gray-100 border-gray-300 rounded text-primary-600 focus:ring-primary-500 dark:focus:ring-primary-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" />
-                        <label htmlFor="checkbox-table-search-1" className="sr-only">checkbox</label>
+                        <label htmlhtmlFor="checkbox-table-search-1" className="sr-only">checkbox</label>
                       </div>
                     </td>
                     <th scope="row" className="flex items-center px-4 py-2 font-medium text-gray-900 whitespace-nowrap dark:text-white">
@@ -194,7 +194,7 @@ export default function Table() {
                     <td className="w-4 px-4 py-3">
                       <div className="flex items-center">
                         <input id="checkbox-table-search-1" type="checkbox" onClick={(event) => { event.stopPropagation() }} className="w-4 h-4 bg-gray-100 border-gray-300 rounded text-primary-600 focus:ring-primary-500 dark:focus:ring-primary-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" />
-                        <label htmlFor="checkbox-table-search-1" className="sr-only">checkbox</label>
+                        <label htmlhtmlFor="checkbox-table-search-1" className="sr-only">checkbox</label>
                       </div>
                     </td>
                     <th scope="row" className="flex items-center px-4 py-2 font-medium text-gray-900 whitespace-nowrap dark:text-white">
@@ -247,7 +247,7 @@ export default function Table() {
                     <td className="w-4 px-4 py-3">
                       <div className="flex items-center">
                         <input id="checkbox-table-search-1" type="checkbox" onClick={(event) => { event.stopPropagation() }} className="w-4 h-4 bg-gray-100 border-gray-300 rounded text-primary-600 focus:ring-primary-500 dark:focus:ring-primary-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" />
-                        <label htmlFor="checkbox-table-search-1" className="sr-only">checkbox</label>
+                        <label htmlhtmlFor="checkbox-table-search-1" className="sr-only">checkbox</label>
                       </div>
                     </td>
                     <th scope="row" className="flex items-center px-4 py-2 font-medium text-gray-900 whitespace-nowrap dark:text-white">
@@ -300,7 +300,7 @@ export default function Table() {
                     <td className="w-4 px-4 py-3">
                       <div className="flex items-center">
                         <input id="checkbox-table-search-1" type="checkbox" onClick={(event) => { event.stopPropagation() }} className="w-4 h-4 bg-gray-100 border-gray-300 rounded text-primary-600 focus:ring-primary-500 dark:focus:ring-primary-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" />
-                        <label htmlFor="checkbox-table-search-1" className="sr-only">checkbox</label>
+                        <label htmlhtmlFor="checkbox-table-search-1" className="sr-only">checkbox</label>
                       </div>
                     </td>
                     <th scope="row" className="flex items-center px-4 py-2 font-medium text-gray-900 whitespace-nowrap dark:text-white">
@@ -353,7 +353,7 @@ export default function Table() {
                     <td className="w-4 px-4 py-3">
                       <div className="flex items-center">
                         <input id="checkbox-table-search-1" type="checkbox" onClick={(event) => { event.stopPropagation() }} className="w-4 h-4 bg-gray-100 border-gray-300 rounded text-primary-600 focus:ring-primary-500 dark:focus:ring-primary-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" />
-                        <label htmlFor="checkbox-table-search-1" className="sr-only">checkbox</label>
+                        <label htmlhtmlFor="checkbox-table-search-1" className="sr-only">checkbox</label>
                       </div>
                     </td>
                     <th scope="row" className="flex items-center px-4 py-2 font-medium text-gray-900 whitespace-nowrap dark:text-white">
@@ -406,7 +406,7 @@ export default function Table() {
                     <td className="w-4 px-4 py-3">
                       <div className="flex items-center">
                         <input id="checkbox-table-search-1" type="checkbox" onClick={(event) => { event.stopPropagation() }} className="w-4 h-4 bg-gray-100 border-gray-300 rounded text-primary-600 focus:ring-primary-500 dark:focus:ring-primary-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" />
-                        <label htmlFor="checkbox-table-search-1" className="sr-only">checkbox</label>
+                        <label htmlhtmlFor="checkbox-table-search-1" className="sr-only">checkbox</label>
                       </div>
                     </td>
                     <th scope="row" className="flex items-center px-4 py-2 font-medium text-gray-900 whitespace-nowrap dark:text-white">
@@ -459,7 +459,7 @@ export default function Table() {
                     <td className="w-4 px-4 py-3">
                       <div className="flex items-center">
                         <input id="checkbox-table-search-1" type="checkbox" onClick={(event) => { event.stopPropagation() }} className="w-4 h-4 bg-gray-100 border-gray-300 rounded text-primary-600 focus:ring-primary-500 dark:focus:ring-primary-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" />
-                        <label htmlFor="checkbox-table-search-1" className="sr-only">checkbox</label>
+                        <label htmlhtmlFor="checkbox-table-search-1" className="sr-only">checkbox</label>
                       </div>
                     </td>
                     <th scope="row" className="flex items-center px-4 py-2 font-medium text-gray-900 whitespace-nowrap dark:text-white">
@@ -512,7 +512,7 @@ export default function Table() {
                     <td className="w-4 px-4 py-3">
                       <div className="flex items-center">
                         <input id="checkbox-table-search-1" type="checkbox" onClick={(event) => { event.stopPropagation() }} className="w-4 h-4 bg-gray-100 border-gray-300 rounded text-primary-600 focus:ring-primary-500 dark:focus:ring-primary-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" />
-                        <label htmlFor="checkbox-table-search-1" className="sr-only">checkbox</label>
+                        <label htmlhtmlFor="checkbox-table-search-1" className="sr-only">checkbox</label>
                       </div>
                     </td>
                     <th scope="row" className="flex items-center px-4 py-2 font-medium text-gray-900 whitespace-nowrap dark:text-white">
@@ -565,7 +565,7 @@ export default function Table() {
                     <td className="w-4 px-4 py-3">
                       <div className="flex items-center">
                         <input id="checkbox-table-search-1" type="checkbox" onClick={(event) => { event.stopPropagation() }} className="w-4 h-4 bg-gray-100 border-gray-300 rounded text-primary-600 focus:ring-primary-500 dark:focus:ring-primary-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" />
-                        <label htmlFor="checkbox-table-search-1" className="sr-only">checkbox</label>
+                        <label htmlhtmlFor="checkbox-table-search-1" className="sr-only">checkbox</label>
                       </div>
                     </td>
                     <th scope="row" className="flex items-center px-4 py-2 font-medium text-gray-900 whitespace-nowrap dark:text-white">
@@ -672,7 +672,7 @@ export default function Table() {
             <div className="flex flex-col md:flex-row items-center justify-between space-y-3 md:space-y-0 md:space-x-4 p-4">
               <div className="w-full md:w-1/2">
                 <form className="flex items-center">
-                  <label htmlFor="simple-search" className="sr-only">Search</label>
+                  <label htmlhtmlFor="simple-search" className="sr-only">Search</label>
                   <div className="relative w-full">
                     <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
                       <svg aria-hidden="true" className="w-5 h-5 text-gray-500 dark:text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
@@ -720,24 +720,24 @@ export default function Table() {
                     <h6 className="mb-3 text-sm font-medium text-gray-900 dark:text-white">Choose brand</h6>
                     <ul className="space-y-2 text-sm" aria-labelledby="filterDropdownButton">
                       <li className="flex items-center">
-                        <input id="apple" type="checkbox" value="" className="w-4 h-4 bg-gray-100 border-gray-300 rounded text-primary-600 focus:ring-primary-500 dark:focus:ring-primary-600 dark:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500"/>
-                          <label htmlFor="apple" className="ml-2 text-sm font-medium text-gray-900 dark:text-gray-100">Apple (56)</label>
+                        <input id="apple" type="checkbox" defaultValue="" className="w-4 h-4 bg-gray-100 border-gray-300 rounded text-primary-600 focus:ring-primary-500 dark:focus:ring-primary-600 dark:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500"/>
+                          <label htmlhtmlFor="apple" className="ml-2 text-sm font-medium text-gray-900 dark:text-gray-100">Apple (56)</label>
                       </li>
                       <li className="flex items-center">
-                        <input id="fitbit" type="checkbox" value="" className="w-4 h-4 bg-gray-100 border-gray-300 rounded text-primary-600 focus:ring-primary-500 dark:focus:ring-primary-600 dark:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500"/>
-                          <label htmlFor="fitbit" className="ml-2 text-sm font-medium text-gray-900 dark:text-gray-100">Microsoft (16)</label>
+                        <input id="fitbit" type="checkbox" defaultValue="" className="w-4 h-4 bg-gray-100 border-gray-300 rounded text-primary-600 focus:ring-primary-500 dark:focus:ring-primary-600 dark:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500"/>
+                          <label htmlhtmlFor="fitbit" className="ml-2 text-sm font-medium text-gray-900 dark:text-gray-100">Microsoft (16)</label>
                       </li>
                       <li className="flex items-center">
-                        <input id="razor" type="checkbox" value="" className="w-4 h-4 bg-gray-100 border-gray-300 rounded text-primary-600 focus:ring-primary-500 dark:focus:ring-primary-600 dark:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500"/>
-                          <label htmlFor="razor" className="ml-2 text-sm font-medium text-gray-900 dark:text-gray-100">Razor (49)</label>
+                        <input id="razor" type="checkbox" defaultValue="" className="w-4 h-4 bg-gray-100 border-gray-300 rounded text-primary-600 focus:ring-primary-500 dark:focus:ring-primary-600 dark:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500"/>
+                          <label htmlhtmlFor="razor" className="ml-2 text-sm font-medium text-gray-900 dark:text-gray-100">Razor (49)</label>
                       </li>
                       <li className="flex items-center">
-                        <input id="nikon" type="checkbox" value="" className="w-4 h-4 bg-gray-100 border-gray-300 rounded text-primary-600 focus:ring-primary-500 dark:focus:ring-primary-600 dark:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500"/>
-                          <label htmlFor="nikon" className="ml-2 text-sm font-medium text-gray-900 dark:text-gray-100">Nikon (12)</label>
+                        <input id="nikon" type="checkbox" defaultValue="" className="w-4 h-4 bg-gray-100 border-gray-300 rounded text-primary-600 focus:ring-primary-500 dark:focus:ring-primary-600 dark:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500"/>
+                          <label htmlhtmlFor="nikon" className="ml-2 text-sm font-medium text-gray-900 dark:text-gray-100">Nikon (12)</label>
                       </li>
                       <li className="flex items-center">
-                        <input id="benq" type="checkbox" value="" className="w-4 h-4 bg-gray-100 border-gray-300 rounded text-primary-600 focus:ring-primary-500 dark:focus:ring-primary-600 dark:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500"/>
-                          <label htmlFor="benq" className="ml-2 text-sm font-medium text-gray-900 dark:text-gray-100">BenQ (74)</label>
+                        <input id="benq" type="checkbox" defaultValue="" className="w-4 h-4 bg-gray-100 border-gray-300 rounded text-primary-600 focus:ring-primary-500 dark:focus:ring-primary-600 dark:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500"/>
+                          <label htmlhtmlFor="benq" className="ml-2 text-sm font-medium text-gray-900 dark:text-gray-100">BenQ (74)</label>
                       </li>
                     </ul>
                   </div>
