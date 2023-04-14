@@ -9,10 +9,10 @@ import CameraLayout from "./components/layouts/CameraLayout"
 
 // components
 import NotFoundAnimation from './components/animated/NotFoundAnimation';
-import Btn from './components/component/Btn';
-import Pgntn from './components/component/Pgntn';
-import Forms from './components/component/Forms';
-import MessageBox from './components/component/MessageBox';
+import ButtonCostum from './components/component/ButtonCostum';
+import PaginationCostum from './components/component/PaginationCostum';
+import FormsCostum from './components/component/FormsCostum';
+import MessageBoxCostum from './components/component/MessageBoxCostum';
 import Nav from './components/blocks/Nav';
 import Table from './components/blocks/Table';
 import ModalCostum from './components/component/ModalCostum';
@@ -57,16 +57,16 @@ export default function App() {
               </Button>
           }/> */}
           <Route path='/component-button' element={
-            <Btn />
+            <ButtonCostum />
           }/>
           <Route path='/component-pagination' element={
-            <Pgntn />
+            <PaginationCostum />
           }/>
           <Route path='/component-form' element={
-            <Forms />
+            <FormsCostum />
           }/>
           <Route path='/component-message-box' element={
-            <MessageBox />
+            <MessageBoxCostum />
           }/>
           <Route path='/component-modal' element={
             <ModalCostum />

@@ -4,7 +4,7 @@ import { Button } from 'flowbite-react';
 import { Link } from 'react-router-dom';
 import logo from '../../assets/images/emkop-logo-transparent-landscape.png';
 
-export default function MessageBox() {
+export default function MessageBoxCostum() {
     return (
         <div className='mx-[5%] lg:w-[50%] lg:mx-auto my-10 grid grid-cols-1 place-content-center'>
             {/* Header */}

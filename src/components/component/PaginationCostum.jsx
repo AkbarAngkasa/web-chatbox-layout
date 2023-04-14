@@ -4,7 +4,7 @@ import { Button } from 'flowbite-react';
 import { Link } from 'react-router-dom';
 import logo from '../../assets/images/emkop-logo-transparent-landscape.png';
 
-export default function Pgntn() {
+export default function PaginationCostum() {
   return (
     <div className='mx-[5%] lg:w-[50%] lg:m-auto h-screen grid grid-cols-1 place-content-center'>
       {/* Header */}

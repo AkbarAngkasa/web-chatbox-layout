@@ -25,7 +25,7 @@ import { Button, Spinner } from 'flowbite-react';
 import { Link } from 'react-router-dom';
 import logo from '../../assets/images/emkop-logo-transparent-landscape.png';
 
-export default function Btn() {
+export default function ButtonCostum() {
     return (
         <div className='mx-[5%] lg:w-[50%] lg:h-screen lg:mx-auto my-10 lg:m-auto grid grid-cols-1 place-content-center'>
             {/* Header */}

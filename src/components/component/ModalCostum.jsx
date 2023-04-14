@@ -67,27 +67,27 @@ export default function ModalCostum() {
                 onClose={onCloseDefault}
             >
                 <Modal.Header>
-                    Terms of Service
+                    Default Modal
                 </Modal.Header>
                 <Modal.Body>
                     <div className="space-y-6">
                         <p className="text-base leading-relaxed text-gray-500 dark:text-gray-400">
-                            With less than a month to go before the European Union enacts new consumer privacy laws for its citizens, companies around the world are updating their terms of service agreements to comply.
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur, at ut! Obcaecati, consequatur nemo quis laborum officia accusantium corporis dolorum sed eveniet quia incidunt iure, molestias aut provident animi tenetur pariatur nisi non cum ratione!
                         </p>
                         <p className="text-base leading-relaxed text-gray-500 dark:text-gray-400">
-                            The European Union’s General Data Protection Regulation (G.D.P.R.) goes into effect on May 25 and is meant to ensure a common set of data rights in the European Union. It requires organizations to notify users as soon as possible of high-risk data breaches that could personally affect them.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem ab adipisci corrupti tenetur, eum quibusdam, minus totam nisi asperiores temporibus deleniti doloribus. Vitae quibusdam quisquam neque corrupti consequuntur? Ad ducimus debitis veniam fugiat praesentium harum totam excepturi reiciendis nihil consequatur, asperiores perspiciatis assumenda distinctio quisquam doloremque quasi itaque laborum enim!
                         </p>
                     </div>
                 </Modal.Body>
                 <Modal.Footer>
                     <Button onClick={onCloseDefault}>
-                        I accept
+                        Saya terima
                     </Button>
                     <Button
                         color="gray"
                         onClick={onCloseDefault}
                     >
-                        Decline
+                        Tolak
                     </Button>
                 </Modal.Footer>
             </Modal>
@@ -110,22 +110,22 @@ export default function ModalCostum() {
                 <Modal.Body>
                     <div className="text-center">
                         {/* <HiOutlineExclamationCircle className="mx-auto mb-4 h-14 w-14 text-gray-400 dark:text-gray-200" /> */}
-                        <FontAwesomeIcon icon={faCircleExclamation} />
+                        <FontAwesomeIcon icon={faCircleExclamation} className="mx-auto mb-4 h-14 w-14 text-gray-400 dark:text-gray-200"/>
                         <h3 className="mb-5 text-lg font-normal text-gray-500 dark:text-gray-400">
-                            Are you sure you want to delete this product?
+                            Yakin ingin hapus produk ini?
                         </h3>
                         <div className="flex justify-center gap-4">
                             <Button
                                 color="failure"
                                 onClick={onClosePopUp}
                             >
-                                Yes, I'm sure
+                                Iya, hapus produk
                             </Button>
                             <Button
                                 color="gray"
                                 onClick={onClosePopUp}
                             >
-                                No, cancel
+                                Batal
                             </Button>
                         </div>
                     </div>
@@ -150,18 +150,18 @@ export default function ModalCostum() {
                 <Modal.Body>
                     <div className="space-y-6 px-6 pb-4 sm:pb-6 lg:px-8 xl:pb-8">
                         <h3 className="text-xl font-medium text-gray-900 dark:text-white">
-                            Sign in to our platform
+                            Sign in Emkop
                         </h3>
                         <div>
                             <div className="mb-2 block">
                                 <Label
                                     htmlFor="email"
-                                    value="Your email"
+                                    value="Email"
                                 />
                             </div>
                             <TextInput
                                 id="email"
-                                placeholder="name@company.com"
+                                placeholder="akbar@emkop.co.id"
                                 required={true}
                             />
                         </div>
@@ -169,7 +169,7 @@ export default function ModalCostum() {
                             <div className="mb-2 block">
                                 <Label
                                     htmlFor="password"
-                                    value="Your password"
+                                    value="Password"
                                 />
                             </div>
                             <TextInput
@@ -182,28 +182,28 @@ export default function ModalCostum() {
                             <div className="flex items-center gap-2">
                                 <Checkbox id="remember" />
                                 <Label htmlFor="remember">
-                                    Remember me
+                                    Ingat saya
                                 </Label>
                             </div>
-                            <a
-                                href="/modal"
+                            <button
+                                href="#"
                                 className="text-sm text-blue-700 hover:underline dark:text-blue-500"
                             >
-                                Lost Password?
-                            </a>
+                                Lupa password
+                            </button>
                         </div>
                         <div className="w-full">
                             <Button>
-                                Log in to your account
+                                Sign in
                             </Button>
                         </div>
                         <div className="text-sm font-medium text-gray-500 dark:text-gray-300">
-                            Not registered?
+                            Belum terdaftar?
                             <a
                                 href="/modal"
                                 className="text-blue-700 hover:underline dark:text-blue-500"
                             >
-                                Create account
+                                Bikin akun
                             </a>
                         </div>
                     </div>
