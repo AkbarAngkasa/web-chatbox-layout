@@ -41,7 +41,7 @@ export default function Login() {
                                         </Link>
                                     </div>
                                     <div>
-                                        <h1 className="my-2 text-3xl font-bold leading-tight tracking-tight text-blue-800 dark:text-white">
+                                        <h1 className="my-2 text-2xl font-bold leading-tight tracking-tight text-blue-800 dark:text-white md:text-3xl">
                                             Login
                                         </h1>
                                     </div>
