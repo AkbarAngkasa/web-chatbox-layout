@@ -6,18 +6,12 @@ import { Link } from 'react-router-dom';
 import logo from '../../assets/images/emkop-logo-transparent-landscape.png';
 import { useEffect } from 'react';
 import useDate from '../../costumHooks/useDate';
-import { useState } from 'react';
+import useGenerateGreet from '../../costumHooks/useGenerateGreet';
 
 export default function Login() {
     useEffect(() => {
         initFlowbite();
     });
-
-    const [jargon, setJargon] = useState('');
-    useEffect(() => {
-        const jargons = ['Woo pretty excited!', 'The first programming language was called FORTRAN', 'There are around 700 separate programming languages', 'NASA still uses programs from the 70s in their spacecraft']
-        setJargon(jargons[Math.floor(Math.random() * jargons.length)]);
-    }, [])
 
     return (
         <>
@@ -33,24 +27,32 @@ export default function Login() {
             {/* Content */}
             <section className="bg-gray-50 dark:bg-gray-900">
                 <div className="flex flex-col items-center justify-center px-6 py-8 mx-auto my-auto h-screen lg:py-0"> 
-                    <Link to="#" className="flex items-center mb-6 text-2xl font-semibold text-gray-900 dark:text-white">
+                    {/* <Link to="#" className="flex items-center mb-6 text-2xl font-semibold text-gray-900 dark:text-white">
                         <img className="w-44" src={logo} alt={logo} />
-                    </Link>
+                    </Link> */}
                     <div className="w-full bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 dark:bg-gray-800 dark:border-gray-700">
                         <div className="p-6 space-y-4 md:space-y-6 sm:p-8">
                             {/* Header */}
                             <div>
-                                <h1 className="my-2 text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl dark:text-white">
-                                    Login
-                                </h1>
+                                <div className='flex flex-row justify-around'>
+                                    <div>
+                                        <Link to="#" className="flex items-center mb-6 text-2xl font-semibold text-gray-900 dark:text-white">
+                                            <img className="w-44" src={logo} alt={logo} />
+                                        </Link>
+                                    </div>
+                                    <div>
+                                        <h1 className="my-2 text-3xl font-bold leading-tight tracking-tight text-blue-800 dark:text-white">
+                                            Login
+                                        </h1>
+                                    </div>
+                                </div>
                                 <hr />
-                                <div className='flex flex-row justify-between'>
-
-                                    <h2 className='my-2 font-semibold text-sm w-[70%]'>
-                                        {jargon}
+                                <div className="flex flex-row justify-between">
+                                    <h2 className="my-2 font-semibold text-sm w-[70%]">
+                                        {useGenerateGreet()}
                                     </h2>
-                                    <h2 className='my-2 font-semibold text-sm'>
-                                        <span className='ml-1'>{useDate()}</span>
+                                    <h2 className="my-2 font-semibold text-sm">
+                                        <span className="ml-1">{useDate()}</span>
                                     </h2>
                                 </div>
                                 {/* <h2 className='my-2 font-semibold text-sm'>
