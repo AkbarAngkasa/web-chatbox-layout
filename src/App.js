@@ -17,6 +17,7 @@ import Nav from './components/blocks/Nav';
 import Table from './components/blocks/Table';
 import ModalCostum from './components/component/ModalCostum';
 import CRUD from './components/blocks/CRUD';
+import Login from './components/blocks/Login';
 
 export default function App() {
 
@@ -81,6 +82,9 @@ export default function App() {
           }/>
           <Route path='/block-crud' element={
             <CRUD />
+          }/>
+          <Route path='/block-login' element={
+            <Login />
           }/>
         </Routes>
       </div>

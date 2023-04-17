@@ -14,6 +14,7 @@ export default function Home() {
         <Link to={'/block-navbar'}>Block Navbar</Link>
         <Link to={'/block-table'}>Block Table</Link>
         <Link to={'/block-crud'}>Block CRUD</Link>
+        <Link to={'/block-login'}>Block Login</Link>
     </div>
   )
 }

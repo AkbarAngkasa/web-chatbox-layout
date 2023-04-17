@@ -155,7 +155,7 @@ export default function ModalCostum() {
                         <div>
                             <div className="mb-2 block">
                                 <Label
-                                    htmlhtmlFor="email"
+                                    htmlhtmlhtmlFor="email"
                                     defaultValue="Email"
                                 />
                             </div>
@@ -168,7 +168,7 @@ export default function ModalCostum() {
                         <div>
                             <div className="mb-2 block">
                                 <Label
-                                    htmlhtmlFor="password"
+                                    htmlhtmlhtmlFor="password"
                                     defaultValue="Password"
                                 />
                             </div>
@@ -181,7 +181,7 @@ export default function ModalCostum() {
                         <div className="flex justify-between">
                             <div className="flex items-center gap-2">
                                 <Checkbox id="remember" />
-                                <Label htmlhtmlFor="remember">
+                                <Label htmlhtmlhtmlFor="remember">
                                     Ingat saya
                                 </Label>
                             </div>
