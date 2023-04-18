@@ -40,6 +40,29 @@ export default function ModalCostum() {
         setFormModalToggle(false);
     }
 
+    // Old Modal
+    const [OldModalToggle, setOldModalToggle] = useState(false);
+
+    function onOpenOld() {
+        setOldModalToggle(true);
+    }
+
+    function onCloseOld() {
+        setOldModalToggle(false);
+    }
+    
+    // Webchatbox Modal
+    const [WebChatBoxModalToggle, setWebChatBoxModalToggle] = useState(false);
+
+    function onOpenWebChatBox() {
+        setWebChatBoxModalToggle(true);
+    }
+
+    function onCloseWebChatBox() {
+        setWebChatBoxModalToggle(false);
+    }
+
+
     return (
         <div className='mx-[5%] lg:w-[50%] lg:mx-auto my-10 grid grid-cols-1 place-content-center'>
             {/* Header */}
@@ -110,7 +133,7 @@ export default function ModalCostum() {
                 <Modal.Body>
                     <div className="text-center">
                         {/* <HiOutlineExclamationCircle className="mx-auto mb-4 h-14 w-14 text-gray-400 dark:text-gray-200" /> */}
-                        <FontAwesomeIcon icon={faCircleExclamation} className="mx-auto mb-4 h-14 w-14 text-gray-400 dark:text-gray-200"/>
+                        <FontAwesomeIcon icon={faCircleExclamation} className="mx-auto mb-4 h-14 w-14 text-gray-400 dark:text-gray-200" />
                         <h3 className="mb-5 text-lg font-normal text-gray-500 dark:text-gray-400">
                             Yakin ingin hapus produk ini?
                         </h3>
@@ -155,7 +178,7 @@ export default function ModalCostum() {
                         <div>
                             <div className="mb-2 block">
                                 <Label
-                                    htmlhtmlhtmlFor="email"
+                                    htmlFor="email"
                                     defaultValue="Email"
                                 />
                             </div>
@@ -168,7 +191,7 @@ export default function ModalCostum() {
                         <div>
                             <div className="mb-2 block">
                                 <Label
-                                    htmlhtmlhtmlFor="password"
+                                    htmlFor="password"
                                     defaultValue="Password"
                                 />
                             </div>
@@ -181,7 +204,7 @@ export default function ModalCostum() {
                         <div className="flex justify-between">
                             <div className="flex items-center gap-2">
                                 <Checkbox id="remember" />
-                                <Label htmlhtmlhtmlFor="remember">
+                                <Label htmlFor="remember">
                                     Ingat saya
                                 </Label>
                             </div>
@@ -199,17 +222,81 @@ export default function ModalCostum() {
                         </div>
                         <div className="text-sm font-medium text-gray-500 dark:text-gray-300">
                             Belum terdaftar?
-                            <a
+                            <Link
                                 href="/modal"
                                 className="text-blue-700 hover:underline dark:text-blue-500"
                             >
                                 Bikin akun
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </Modal.Body>
             </Modal>
 
+            <hr className='my-4' />
+
+            {/* ================= */}
+            {/* === Old Modal === */}
+            {/* ================= */}
+            <Button onClick={onOpenOld}>
+                Old modal
+            </Button>
+            <Modal
+                show={OldModalToggle}
+                position="center"
+                onClose={onCloseOld}
+            >
+                <div className="h-fit mt-[45%] sm:mt-0">
+                    <Modal.Header>
+                        Gagal ganti PIN Transaksi
+                    </Modal.Header>
+                    <Modal.Body>
+                        <div className="space-y-6">
+                            <p className="font-medium text-base leading-relaxed text-gray-600 dark:text-gray-600">
+                                Pin lama tidak sesuai
+                            </p>
+                        </div>
+                    </Modal.Body>
+                </div>
+            </Modal>
+
+            <hr className='my-4' />
+
+            {/* ======================== */}
+            {/* === Webchatbox Modal === */}
+            {/* ======================== */}
+
+            <Button onClick={onOpenWebChatBox}>
+                WebChatBox Modal
+            </Button>
+            <Modal
+                show={WebChatBoxModalToggle}
+                size="md"
+                popup={true}
+                onClose={onCloseWebChatBox}
+            >
+                <Modal.Body>
+                    <div className="text-center pt-10">
+                        <FontAwesomeIcon icon={faCircleExclamation} className="mx-auto mt-4 mb-2 h-14 w-14 text-gray-400 dark:text-gray-200" />
+                        <h1 className="mb-4 mt-2 text-lg font-semibold dark:text-slate-100">
+                            Gagal ganti PIN Transaksi
+                        </h1>
+                        <hr />
+                        <h3 className="my-4 text-lg font-normal text-gray-500 dark:text-gray-400">
+                            Yakin ingin hapus produk ini?
+                        </h3>
+                        <div className="flex justify-center gap-4">
+                            <Button
+                                onClick={onCloseWebChatBox}
+                                className='rounded-full'
+                                size={"sm"}
+                            >
+                                OK
+                            </Button>
+                        </div>
+                    </div>
+                </Modal.Body>
+            </Modal>
         </div>
     )
 }

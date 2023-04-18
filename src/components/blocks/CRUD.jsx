@@ -54,19 +54,19 @@ export default function CRUD() {
                         <form action="#">
                             <div className="grid gap-4 mb-4 sm:grid-cols-2">
                                 <div>
-                                    <label htmlhtmlFor="name" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Nama</label>
+                                    <label htmlFor="name" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Nama</label>
                                     <input type="text" name="name" id="name" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Ketik nama " required="" />
                                 </div>
                                 <div>
-                                    <label htmlhtmlFor="brand" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Merk</label>
+                                    <label htmlFor="brand" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Merk</label>
                                     <input type="text" name="brand" id="brand" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Merk " required="" />
                                 </div>
                                 <div>
-                                    <label htmlhtmlFor="price" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Harga</label>
+                                    <label htmlFor="price" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Harga</label>
                                     <input type="number" name="price" id="price" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Rp.10.000.000,00" required="" />
                                 </div>
                                 <div>
-                                    <label htmlhtmlFor="category" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Kategori</label>
+                                    <label htmlFor="category" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Kategori</label>
                                     <select id="category" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500">
                                         <option>Pilih kategori</option>
                                         <option defaultValue="TV">TV/Monitors</option>
@@ -76,7 +76,7 @@ export default function CRUD() {
                                     </select>
                                 </div>
                                 <div className="sm:col-span-2">
-                                    <label htmlhtmlFor="description" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Deskripsi</label>
+                                    <label htmlFor="description" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Deskripsi</label>
                                     <textarea id="description" rows="4" className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Tulis deskripsi disini"></textarea>
                                 </div>
                             </div>
@@ -116,19 +116,19 @@ export default function CRUD() {
                         <form action="#">
                             <div className="grid gap-4 mb-4 sm:grid-cols-2">
                                 <div>
-                                    <label htmlhtmlFor="name" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Nama</label>
+                                    <label htmlFor="name" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Nama</label>
                                     <input type="text" name="name" id="name" defaultValue="Lenovo Ideapad" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Ex. Apple iMac 27&ldquo;" />
                                 </div>
                                 <div>
-                                    <label htmlhtmlFor="brand" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Merk</label>
+                                    <label htmlFor="brand" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Merk</label>
                                     <input type="text" name="brand" id="brand" defaultValue="Lenovo" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Contoh: Apple" />
                                 </div>
                                 <div>
-                                    <label htmlhtmlFor="price" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Harga</label>
+                                    <label htmlFor="price" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Harga</label>
                                     <input type="number" defaultValue="Rp.8.000.000,00" name="price" id="price" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Rp.8.000.000,00" />
                                 </div>
                                 <div>
-                                    <label htmlhtmlFor="category" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Category</label>
+                                    <label htmlFor="category" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Category</label>
                                     <select id="category" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500">
                                         <option value="">Electronics</option>
                                         <option defaultValue="TV">TV/Monitors</option>
@@ -138,7 +138,7 @@ export default function CRUD() {
                                     </select>
                                 </div>
                                 <div className="sm:col-span-2">
-                                    <label htmlhtmlFor="description" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Description</label>
+                                    <label htmlFor="description" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Description</label>
                                     <textarea id="description" rows="5" className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Write a description..." defaultValue={"Prosesor, Intel Core i5-7200U(H) Processor; Intel Core I3-6006U Processor ; Sistem Opearsi. Windows 10 Home ; Grafis. N/A; NVIDIA GeForce 920MX DDR5"}></textarea>
                                 </div>
                             </div>

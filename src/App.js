@@ -18,6 +18,7 @@ import Table from './components/blocks/Table';
 import ModalCostum from './components/component/ModalCostum';
 import CRUD from './components/blocks/CRUD';
 import Login from './components/blocks/Login';
+import Sidenav from './components/blocks/Sidenav';
 
 export default function App() {
 
@@ -85,6 +86,9 @@ export default function App() {
           }/>
           <Route path='/block-login' element={
             <Login />
+          }/>
+          <Route path='/block-sidenav' element={
+            <Sidenav />
           }/>
         </Routes>
       </div>
