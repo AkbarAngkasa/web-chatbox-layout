@@ -23,7 +23,16 @@ export default function Sidenav() {
                         <li>
                             <img src={logo} alt={logo} />
                         </li>
-                        <li className="flex bg-red-500">
+                        <li>
+                            <div className="p-2 flex flex-col">
+                                <span className="font-medium text-sm">You're logged as</span>
+                                <div className="flex flex-wrap justify-between">
+                                    <span className="font-semibold text-xl py-0 mb-1">User's name</span>
+                                    <button className="font-medium text-sm py-1 px-3 mb-1 rounded-full bg-blue-700 hover:bg-blue-900 text-white">Logout</button>
+                                </div>
+                            </div>
+                        </li>
+                        {/* <li className="flex bg-red-500">
                             <div className="flex flex-col items-start p-4 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
                                 <span className="text-sm">You're logged as</span>
                                 <h1 className="text-lg font-semibold">User's name</h1>
@@ -33,7 +42,7 @@ export default function Sidenav() {
                                     Logout
                                 </button>
                             </div>
-                        </li>
+                        </li> */}
                         <li data-drawer-target="default-sidebar" data-drawer-toggle="default-sidebar" aria-controls="default-sidebar" type="button" className="sm:hidden flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
                             Close
                         </li>
