@@ -6,7 +6,7 @@ import logo from '../../assets/images/emkop-logo-transparent-landscape.png';
 import { useEffect } from 'react';
 import { initFlowbite } from 'flowbite';
 
-export default function Table() {
+export default function TableBlock() {
   useEffect(() => {
     initFlowbite();
   });

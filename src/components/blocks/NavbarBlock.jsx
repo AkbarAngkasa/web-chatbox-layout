@@ -7,7 +7,7 @@ import logo from '../../assets/images/emkop-logo-transparent-landscape.png';
 import user1 from '../../assets/images/people/user-1.png';
 import { useEffect } from 'react';
 
-export default function Nav() {
+export default function NavbarBlock() {
   useEffect(() => {
     initFlowbite();
   });

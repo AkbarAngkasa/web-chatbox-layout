@@ -13,12 +13,15 @@ import ButtonCostum from './components/component/ButtonCostum';
 import PaginationCostum from './components/component/PaginationCostum';
 import FormsCostum from './components/component/FormsCostum';
 import MessageBoxCostum from './components/component/MessageBoxCostum';
-import Nav from './components/blocks/Nav';
-import Table from './components/blocks/Table';
 import ModalCostum from './components/component/ModalCostum';
-import CRUD from './components/blocks/CRUD';
-import Login from './components/blocks/Login';
-import Sidenav from './components/blocks/Sidenav';
+
+// Blocks
+import NavbarBlock from './components/blocks/NavbarBlock';
+import TableBlock from './components/blocks/TableBlock';
+import CRUDBlock from './components/blocks/CRUDBlock';
+import LoginBlock from './components/blocks/LoginBlock';
+import SidenavBlock from './components/blocks/SidenavBlock';
+import DashboardLayout from './components/layouts/DashboardLayout';
 
 export default function App() {
 
@@ -35,19 +38,20 @@ export default function App() {
           <Route path="/pin-screen-layout" element={<PinLayout />}/>
           <Route path="/animation-layout" element={
             <AnimationLayout 
-              isHeader={true}
-              headerElhImg={<img src={logo} alt={logo} className="w-60 -mt-2 lg:w-80 lg:-mt-8 z-10" />}
-              isHeaderTitle={true}
-              headerTitle="Animation Page Layout"
-              animation={<NotFoundAnimation />}
-              isAnimationTitle={true}
-              animationTitle="Animation Title"
-              isBtn={true}
-              btnTitle={"Button"}
-              isBtnHandler={true}
-              btnHandler={clickHandler}
+            isHeader={true}
+            headerElhImg={<img src={logo} alt={logo} className="w-60 -mt-2 lg:w-80 lg:-mt-8 z-10" />}
+            isHeaderTitle={true}
+            headerTitle="Animation Page Layout"
+            animation={<NotFoundAnimation />}
+            isAnimationTitle={true}
+            animationTitle="Animation Title"
+            isBtn={true}
+            btnTitle={"Button"}
+            isBtnHandler={true}
+            btnHandler={clickHandler}
             />
           }/>
+          <Route path="/dashboard-layout" element={<DashboardLayout />}/>
           {/* <Route path='/component-button' element={
             <Button 
               isBtnHandler={false}
@@ -76,19 +80,19 @@ export default function App() {
           }/>
           {/* Blocks */}
           <Route path='/block-navbar' element={
-            <Nav />
+            <NavbarBlock />
           }/>
           <Route path='/block-table' element={
-            <Table />
+            <TableBlock />
           }/>
           <Route path='/block-crud' element={
-            <CRUD />
+            <CRUDBlock />
           }/>
           <Route path='/block-login' element={
-            <Login />
+            <LoginBlock />
           }/>
           <Route path='/block-sidenav' element={
-            <Sidenav />
+            <SidenavBlock />
           }/>
         </Routes>
       </div>
