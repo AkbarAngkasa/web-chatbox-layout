@@ -14,6 +14,7 @@ export default function Home() {
         <Link to={'/component-modal'}>Component Modal</Link>
         <Link to={'/block-navbar'}>Block Navbar</Link>
         <Link to={'/block-table'}>Block Table</Link>
+        <Link to={'/block-table-prime'}>Block Table Prime</Link>
         <Link to={'/block-crud'}>Block CRUD</Link>
         <Link to={'/block-login'}>Block Login</Link>
         <Link to={'/block-sidenav'}>Block Sidenav</Link>

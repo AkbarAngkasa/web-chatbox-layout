@@ -22,6 +22,7 @@ import CRUDBlock from './components/blocks/CRUDBlock';
 import LoginBlock from './components/blocks/LoginBlock';
 import SidenavBlock from './components/blocks/SidenavBlock';
 import DashboardLayout from './components/layouts/DashboardLayout';
+import PrimeTablesBlocks from './components/blocks/PrimeTablesBlocks';
 
 export default function App() {
 
@@ -84,6 +85,9 @@ export default function App() {
           }/>
           <Route path='/block-table' element={
             <TableBlock />
+          }/>
+          <Route path='/block-table-prime' element={
+            <PrimeTablesBlocks />
           }/>
           <Route path='/block-crud' element={
             <CRUDBlock />
