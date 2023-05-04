@@ -32,7 +32,7 @@ export default function App() {
 
   return(
     <Router>
-      <div className="content select-none font-sans">
+      <div className="content font-sans">
         <Routes>
           <Route path="/" element={<Home />}/>
           <Route path="/camera-layout" element={<CameraLayout />}/>
