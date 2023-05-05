@@ -205,13 +205,13 @@ export default function PrimeTableExport() {
         <>
             <div id="modal-wrapper">
                 <div className='bg-[rgba(0,0,0,0.5)] absolute flex justify-center place-items-center z-50 top-0 right-0 bottom-0 left-0 p-[5%]'>
-                    <div className='relative flex flex-col flex-wrap sm:flex-row justify-around w-full h-fit bg-white opacity-100'>
-                        <div className='w-full sm:w-[50%]'>
-                            <img src={user_id_card_1} alt={user_id_card_1}/>
+                    <div className='relative flex flex-col sm:flex-row justify-around w-full h-full overflow-auto sm:h-fit bg-white opacity-100'>
+                        <div className='w-full flex justify-center place-items-center sm:w-[50%] bg-slate-900'>
+                            <img src={user_id_card_1} alt={user_id_card_1} className='w-full h-fit'/>
                         </div>
                         <div className='flex flex-col w-full sm:w-[50%]'>
                             <div className='flex flex-row p-[5%] bg-slate-50'>
-                                <ul className='w-[80%]'>
+                                <ul className='w-[75%]'>
                                     <li className='flex justify-between mb-1'>
                                         <span className='font-semibold text-sm'>Acc No.</span>
                                         <span className='text-sm'>EA-1-2345-6789-9</span>
@@ -221,12 +221,12 @@ export default function PrimeTableExport() {
                                         <span className='text-sm'>8123456789012</span>
                                     </li>
                                 </ul>
-                                <div className='w-[20%] flex justify-end place-items-end'>
+                                <div className='w-[25%] pl-2 flex justify-end place-items-end'>
                                     <span className="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded-full dark:bg-green-900 dark:text-green-300">Active</span>
                                 </div>
                             </div>
                             <div className='p-[5%]'>
-                                <form className='w-[80%]'>
+                                <form className='w-full'>
                                     <li className='flex justify-between mb-1'>
                                         <span className='font-semibold text-sm'>Full Name</span>
                                         <input type="text" className='text-sm p-1 border-none text-end placeholder:text-end placeholder:text-slate-900 placeholder:text-sm' placeholder='Siswanto Nugroho' />
@@ -237,7 +237,14 @@ export default function PrimeTableExport() {
                                     </li>
                                     <li className='flex justify-between mb-1'>
                                         <span className='font-semibold text-sm'>Birthdate</span>
-                                        <input type="date" className='text-sm p-1 border-none text-end placeholder:text-end placeholder:text-slate-900 placeholder:text-sm' placeholder='350810425938207' />
+                                        <input type="date" className='text-sm p-1 border-none text-end placeholder:text-end placeholder:text-slate-900 placeholder:text-sm' />
+                                    </li>
+                                    <li className='flex justify-between mb-1'>
+                                        <span className='font-semibold text-sm'>Gender</span>
+                                        <select className="text-sm p-1 border-none text-end placeholder:text-end placeholder:text-slate-900 placeholder:text-sm' placeholder='350810425938207">
+                                            <option>Male</option>
+                                            <option>Female</option>
+                                        </select>
                                     </li>
                                     <li className='flex justify-between mb-1'>
                                         <span className='font-semibold text-sm'>Adress</span>
@@ -255,10 +262,27 @@ export default function PrimeTableExport() {
                                         <span className='font-semibold text-sm'>City</span>
                                         <input type="text" className='text-sm p-1 border-none text-end placeholder:text-end placeholder:text-slate-900 placeholder:text-sm' placeholder='Lumajang' />
                                     </li>
+                                    <div className='flex justify-end'>
+                                        <button type="button" className="px-3 py-2 mt-1 mr-2 text-xs font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Save</button>
+                                        <button type="button" className="px-3 py-2 mt-1 text-xs font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Cancel</button>
+                                    </div>
                                 </form>
                             </div>
-                            <div>
-
+                            <div className='flex flex-row p-[5%] bg-slate-50'>
+                                <ul className='w-[75%]'>
+                                    <li className='flex justify-between mb-1'>
+                                        <span className='font-semibold text-sm'>KYC Status</span>
+                                        <span className='text-sm'>Pending KYC-1 </span>
+                                    </li>
+                                    <li className='flex justify-between mb-1'>
+                                        <span className='font-semibold text-sm'>User Status</span>
+                                        <span className='text-sm'>Active</span>
+                                    </li>
+                                </ul>
+                                <div className='w-[25%] pl-2 flex flex-wrap justify-end place-items-start'>
+                                    <button type="button" className="px-3 py-2 mb-2 mr-2 text-xs font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Verify</button>
+                                    <button type="button" className="px-3 py-2 mb-2 text-xs font-medium text-center text-white bg-red-700 rounded-lg hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-800">Reject</button>
+                                </div>
                             </div>
                         </div>
                     </div>
