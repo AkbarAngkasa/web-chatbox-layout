@@ -153,8 +153,13 @@ export default function PrimeTableExport() {
         return (
             <>
                 <div className='flex flex-row'>
-                    <ButtonFlowbite onClick={() => openModal(product.phone_no)}>
-                        {product.phone_no}
+                    <ButtonFlowbite onClick={() => openModal(product.phone_no)} className='mr-2'>
+                        {/* {product.phone_no} */}
+                        Review
+                    </ButtonFlowbite>
+                    <ButtonFlowbite onClick={() => openModal(product.phone_no)} className='bg-red-700'>
+                        Block
+                        {/* {product.phone_no} */}
                     </ButtonFlowbite>
                     <div className='absolute hidden justify-center place-items-center z-50 top-0 right-0 bottom-0 left-0 p-[5%] bg-[rgba(0,0,0,0.5)]' id={`modal_${product.phone_no}`}>
                         <div className='relative flex flex-col sm:flex-row justify-around w-full h-full overflow-auto sm:h-fit bg-white opacity-100'>
