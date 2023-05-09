@@ -161,10 +161,10 @@ export default function PrimeTableExport() {
                         Block
                         {/* {product.phone_no} */}
                     </ButtonFlowbite>
-                    <div className='absolute hidden justify-center place-items-center z-50 top-0 right-0 bottom-0 left-0 p-[5%] bg-[rgba(0,0,0,0.5)]' id={`modal_${product.phone_no}`}>
+                    <div className='absolute hidden justify-center place-items-center z-50 top-0 right-0 bottom-0 left-0 p-[5%] bg-[rgba(0,0,0,0.5)] h-screen' id={`modal_${product.phone_no}`}>
                         <div className='relative flex flex-col sm:flex-row justify-around w-full h-full overflow-auto sm:h-fit bg-white opacity-100'>
                             <div className='absolute top-3 right-3'>
-                                <FontAwesomeIcon icon={faXmark} className='cursor-pointer text-white' onClick={() => closeModal(product.phone_no)}/>
+                                <FontAwesomeIcon icon={faXmark} className='cursor-pointer text-white sm:text-slate-500' onClick={() => closeModal(product.phone_no)}/>
                             </div>
                             <div className='w-full flex justify-center place-items-center sm:w-[50%] bg-slate-900'>
                                 <img src={user_id_card_1} alt={user_id_card_1} className='w-full h-fit' />
@@ -239,8 +239,8 @@ export default function PrimeTableExport() {
                                             <span className='text-sm'>Active</span>
                                         </li>
                                     </ul>
-                                    <div className='w-[25%] pl-2 flex flex-wrap justify-end place-items-start'>
-                                        <button type="button" className="px-3 py-2 mb-2 sm:mr-2 text-xs font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Verify</button>
+                                    <div className='w-[25%] pl-2 flex flex-col justify-end place-items-end'>
+                                        <button type="button" className="px-3 py-2 mb-2 lg:mr-2 text-xs font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Verify</button>
                                         <button type="button" className="px-3 py-2 mb-2 text-xs font-medium text-center text-white bg-red-700 rounded-lg hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-800">Reject</button>
                                     </div>
                                 </div>
@@ -257,7 +257,7 @@ export default function PrimeTableExport() {
         <>
             <div className="card">
                 <Tooltip target=".export-buttons>button" position="bottom" />
-                <DataTable ref={dt} value={products} header={header} tableStyle={{ minWidth: '50rem' }} paginator rows={10} filters={filters} globalFilterFields={['register_time', 'account_no', 'phone_no', 'full_name', 'nik', 'user_status', 'user_kyc', 'action']} emptyMessage="Query not found." className='h-screen'>
+                <DataTable ref={dt} value={products} header={header} tableStyle={{ minWidth: '50rem' }} paginator rows={10} filters={filters} globalFilterFields={['register_time', 'account_no', 'phone_no', 'full_name', 'nik', 'user_status', 'user_kyc', 'action']} emptyMessage="Query not found." className='h-fit'>
                     <Column field="register_time" header="Register Time" />
                     <Column field="account_no" header="Account No" />
                     <Column field="phone_no" header="Phone No" />
