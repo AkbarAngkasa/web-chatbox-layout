@@ -223,7 +223,7 @@ export default function PrimeTableEOD() {
                             <div className='flex flex-col justify-start'>
                                 
                                 {/* Container */}
-                                <div className='flex flex-col sm:flex-row justify-between p-[2%] border-t-[1px] bg-gray-100 border-slate-400'>
+                                <div className='flex flex-col sm:flex-row justify-between p-[5%] sm:p-[2%] border-t-[1px] bg-gray-100 border-slate-400'>
                                     <div className='flex flex-col w-full mb-4 sm:mr-4 sm:mb-0'>
                                         <div className='flex flex-row justify-between'>
                                             <span className='inline-block mb-2 text-sm font-medium text-slate-600'>Batch Date</span>
