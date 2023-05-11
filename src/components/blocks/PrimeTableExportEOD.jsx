@@ -22,6 +22,7 @@ export default function PrimeTableEOD() {
     const [products, setProducts] = useState([]);
     const dt = useRef(null);
 
+    // Dummy data
     const ProductService = [
         {
             batch_id: '1294',
@@ -213,7 +214,7 @@ export default function PrimeTableEOD() {
                         <div className='relative flex flex-col bg-white'>
                             {/* Close Button */}
                             <div className='absolute top-3 right-3'>
-                                <FontAwesomeIcon icon={faXmark} className='cursor-pointer text-white sm:text-slate-500' onClick={() => closeModal(product.phone_no)}/>
+                                <FontAwesomeIcon icon={faXmark} className='cursor-pointer text-slate-500' onClick={() => closeModal(product.phone_no)}/>
                             </div>
                             {/* Header */}
                             <div className='p-[2%]'>
