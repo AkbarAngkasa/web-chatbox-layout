@@ -4,6 +4,8 @@ import { DateRange } from 'react-date-range'
 import 'react-date-range/dist/styles.css'
 import 'react-date-range/dist/theme/default.css'
 import moment from 'moment'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faXmark } from '@fortawesome/free-solid-svg-icons'
 
 const DateRangeComp = () => {
 
@@ -32,7 +34,6 @@ const DateRangeComp = () => {
 
     // hide dropdown on ESC press
     const hideOnEscape = (e) => {
-        // console.log(e.key)
         if (e.key === "Escape") {
             setOpen(false)
         }
@@ -40,60 +41,73 @@ const DateRangeComp = () => {
 
     // Hide on outside click
     const hideOnClickOutside = (e) => {
-        // console.log(refOne.current)
-        // console.log(e.target)
         if (refOne.current && !refOne.current.contains(e.target)) {
             setOpen(false)
         }
     }
 
-    const dateArr = useRef(null);
+    const startDate = useRef("");
+    const endDate = useRef("");
 
-    const [fromDate, setFromDate] = useState(null);
-    const [toDate, setToDate] = useState(null);
+    const dateValueHandler = (item) => {
+        const startDateInput = startDate.current = item.selection.startDate;
+        const endDateInput = endDate.current = item.selection.endDate;
 
-    const dateValueHandler = () => {
-        let dateRangeInput = document.getElementById('date-range-input').getAttribute('value');
-        let dateRangeArr = dateRangeInput.split(' ');
-        dateArr.current = dateRangeArr
-        
-        if(dateRangeArr.length > 2){
-            console.log(dateRangeArr.slice(0, 3))
-            console.log(dateRangeArr.slice(4, 7))
-        }
+        console.log("Start Date Input: ", startDateInput);
+        console.log("End Date Input: ", endDateInput);
+    }
+
+    const clearDateHandler = (e) => {
+        e.preventDefault();
+        // UI
+        setIsDate(false);
+        // Data
+        const startDateInput = startDate.current = "";
+        const endDateInput = endDate.current = "";
+
+        console.log("Start Date Input: ", startDateInput);
+        console.log("End Date Input: ", endDateInput);
     }
 
     return (
         <>
-            <input
-                id="date-range-input"
-                value={
-                    isDate ?
-                    `${moment(range[0].startDate).format('DD MMMM YYYY')} - ${moment(range[0].endDate).format('DD MMMM YYYY')}`
-                    :
-                    `Select Date`
-                }
-                readOnly
-                className="w-full px-4 inline-block py-2.5 text-sm font-medium text-gray-900 border border-slate-400 rounded-lg bg-gray-50 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
-                onClick={() => {
-                    setOpen(open => !open)
-                }}
-            />
+            <div className="relative">
+                <input
+                    id="date-range-input"
+                    value={
+                        isDate ?
+                        `${moment(range[0].startDate).format('DD MMMM YYYY')} - ${moment(range[0].endDate).format('DD MMMM YYYY')}`
+                        :
+                        ""
+                    }
+                    readOnly
+                    placeholder="Select Date"
+                    className="w-full px-4 inline-block py-2.5 text-sm font-medium text-gray-900 border border-slate-400 rounded-lg bg-gray-50 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                    onClick={() => {
+                        setOpen(open => !open)
+                    }}
+                />
+                <div className="absolute inset-y-0 right-0 flex items-center pr-3">
+                    <FontAwesomeIcon icon={faXmark} onClick={(e) => clearDateHandler(e)} className="text-slate-500 cursor-pointer z-40"/>
+                </div>
+            </div>
 
             <div ref={refOne}>
                 {open &&
                     <DateRange
                         onChange={item => {
+                            // Data
+                            dateValueHandler(item)
+                            // UI
                             setRange([item.selection])
                             setIsDate(true)
-                            dateValueHandler()
                         }}
                         editableDateInputs={true}
                         moveRangeOnFirstSelection={false}
                         ranges={range}
                         months={1}
                         direction="horizontal"
-                        className="calendarElement "
+                        className="calendarElement absolute z-50"
                     />
                 }
             </div>
