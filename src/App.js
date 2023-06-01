@@ -14,6 +14,7 @@ import PaginationCostum from './components/component/PaginationCostum';
 import FormsCostum from './components/component/FormsCostum';
 import MessageBoxCostum from './components/component/MessageBoxCostum';
 import ModalCostum from './components/component/ModalCostum';
+import DateCostum from './components/component/DateCostum';
 
 // Blocks
 import NavbarBlock from './components/blocks/NavbarBlock';
@@ -23,6 +24,7 @@ import LoginBlock from './components/blocks/LoginBlock';
 import SidenavBlock from './components/blocks/SidenavBlock';
 import DashboardLayout from './components/layouts/DashboardLayout';
 import PrimeTablesBlocks from './components/blocks/PrimeTablesBlocks';
+import SkeletonLayout from './components/layouts/SkeletonLayout';
 
 export default function App() {
 
@@ -53,6 +55,7 @@ export default function App() {
             />
           }/>
           <Route path="/dashboard-layout" element={<DashboardLayout />}/>
+          <Route path="/skeleton-layout" element={<SkeletonLayout />}/>
           {/* <Route path='/component-button' element={
             <Button 
               isBtnHandler={false}
@@ -78,6 +81,9 @@ export default function App() {
           }/>
           <Route path='/component-modal' element={
             <ModalCostum />
+          }/>
+          <Route path='/component-date' element={
+            <DateCostum />
           }/>
           {/* Blocks */}
           <Route path='/block-navbar' element={
